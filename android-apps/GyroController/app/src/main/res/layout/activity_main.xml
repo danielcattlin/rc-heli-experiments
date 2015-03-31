@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/status_text"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bluetooth_devices"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="24sp"
+            android:padding="@dimen/activity_vertical_margin"
+            android:id="@+id/status"
+            android:text="@string/status"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|top"
+        />
+
+        <Button
+            android:id="@+id/ok_button"
+            android:visibility="invisible"
+            android:layout_below="@+id/status"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttonback"
+            android:text="@string/OK"/>
+
+        <com.intel.gyrocontroller.VerticalSeekBar
+            android:visibility="invisible"
+            android:layout_marginBottom="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/darker_gray"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/power_scroller"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/power_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/black"
+            android:layout_above="@+id/power_scroller"/>
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/bluetooth_devices"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/connect_options">
+    </Spinner>
+
+    <LinearLayout
+        android:id="@+id/connect_options"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        style="?android:attr/buttonBarStyle">
+        <Button
+            android:id="@+id/connect_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/connect"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttonback"
+            style="?android:attr/buttonBarButtonStyle"/>
+        <Button
+            android:id="@+id/scan_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/scan"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttonback"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</RelativeLayout>

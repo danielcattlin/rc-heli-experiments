@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gyro Controller</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="scan">Scan for devices</string>
+    <string name="action_settings">Settings</string>
+    <string name="status">Setting up&#8230;</string>
+    <string name="no_bluetooth">Your device does not support bluetooth.</string>
+    <string name="enable_bluetooth">Bluetooth is not enabled.
+        \nPlease turn on bluetooth in your settings.</string>
+    <string name="OK">OK</string>
+
+</resources>
