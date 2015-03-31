@@ -1,0 +1,9 @@
+# All application builds/idea
+/android-apps/GyroController/build/
+/android-apps/Helicontrol/build/
+/android-apps/Helicontrol/pysicaloidLibrary/build/
+/android-apps/Helicontrol/physicaloidTutorial/build/
+/android-apps/GyroController/.idea/
+/android-apps/Helicontrol/.idea/
+/android-apps/Helicontrol/pysicaloidLibrary/.idea/
+/android-apps/Helicontrol/physicaloidTutorial/.idea/
