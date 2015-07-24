@@ -1,0 +1,5 @@
+Experimental program for controlling IR-RC helicopters via Arduino.
+
+Controllers are in the form of Android apps which communicate with bluetooth to the Arduino which in turn control the helicoper. 
+
+Only works for helicopers with the same IR PWM format.
